@@ -63,6 +63,7 @@ public class Famille extends AppCompatActivity implements View.OnClickListener {
         }
         afficherCompteur();
         gererBoutons();*/
+
     } /// onClick
     /**
      *
