@@ -8,11 +8,31 @@
     tools:context="com.example.muzubi.maelysproject.Apprendre">
 
     <TextView
-        android:id="@+id/textViewApprendre"
+        android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:text="Tu veux apprendre ?" />
+
+    <EditText
+        android:id="@+id/editTextApprendre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:onClick="onClickValider"/>
+
+    <TextView
+        android:id="@+id/textViewApprendre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

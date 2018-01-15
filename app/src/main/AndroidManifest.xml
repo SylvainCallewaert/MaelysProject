@@ -16,9 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Famille" />
-        <activity android:name=".Jouer" />
-        <activity android:name=".Apprendre"></activity>
+        <activity android:name=".Famille"
+            android:parentActivityName=".Accueil"/>
+        <activity android:name=".Jouer"
+            android:parentActivityName=".Accueil"/>
+        <activity android:name=".Apprendre"
+            android:parentActivityName=".Accueil">
+        </activity>
     </application>
 
 </manifest>
