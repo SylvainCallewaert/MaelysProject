@@ -1,4 +1,5 @@
 package com.example.muzubi.maelysproject;
+import android.app.ActionBar;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,15 @@ public class Famille extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.famille);
+
+        //Actionbar retour
+        ActionBar actionBar = getActionBar();
+        if(actionBar != null){
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
+
+
         imageButtonFirst = findViewById(R.id.imageButtonFirst);
         imageButtonPrevious = findViewById(R.id.imageButtonPrevious);
         imageButtonNext = findViewById(R.id.imageButtonNext);
